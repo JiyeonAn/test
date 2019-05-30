@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "css/my.css">
+    <script src ="js/jquery-1.12.4.js"></script>
+    <script src ="js/my.js">//순서유의!</script>
+    <style>
+        body{margin-bottom: 300px;}
+        #box1{
+            border-width: 20px;
+            padding: 20px;
+            margin: 20px;
+        }
+    </style>
+    <script>
+     
+     $(document).ready(function(){
+        //  setButton("#btn2");
+
+        //요구사항]box1의 너비???
+        //DOM ** inline style빼고는 초기값을 얻어오지 못한다!
+        // alert(document.getElementById("box1").style.width);
+
+        //jQuery
+        // alert();
+        //컨텐츠 영역의 크기
+        console.log("width",$("#box1").css("width"));
+        console.log("height",$("#box1").css("height"));
+        
+        //css는 무조건 단위가 붙는다 >> width(), height()쓰면 parseInt안해도 됨!
+        console.log("width()",$("#box1").width());
+        console.log("height()",$("#box1").height());
+//------------------------------------------------------------------------
+        //컨텐츠 영역 + 패딩
+        console.log("width()",$("#box1").innerWidth()); //240 : 200+(20+20) border값을 제외한 전체 너비(컨텡츠 + 패딩) >>눈으로는 실제 너비처럼 보이는 값
+        console.log("height()",$("#box1").innerHeight()); //24-
+
+        //컨텐츠 영역 + 패딩 + 보더값
+        console.log("width()",$("#box1").outerWidth(true)); 
+        console.log("height()",$("#box1").outerHeight(true)); 
+
+    }); 
+
+    </script>
+</head>
+<body>
+    <h1>jQuery에서 객체의 영역과 관련된 기능(=박스모델)</h1>
+
+    <div id = "box1" class = "box yellow">상자</div>
+
+    <!-- <input type = "button" value = "버튼1" id = "btn1" class = "btn">
+    <input type = "button" value = "버튼2" id = "btn2" class = "btn"> -->
+
+    
+</body>
+</html>

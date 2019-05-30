@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery-1.12.4.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <style>
+        * {
+            outline: none !important;
+        }
+
+        body {
+            margin-bottom: 300px;
+        }
+    </style>
+    <script>
+
+        $(document).ready(function () {
+
+        });
+
+    </script>
+</head>
+
+<body>
+    <!-- ex22_bootstrap.htm -->
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Bootstrap Example</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ratione deserunt atque doloribus,
+                voluptatibus mollitia quam quod ad at quaerat et debitis, saepe cumque molestias a veritatis quisquam.
+                Soluta, exercitationem!</p>
+        </div>
+
+
+    </div>
+
+    <div class="container">
+        <section>
+            <p>나머지 내용입니다.</p>
+            <p>나머지 내용입니다.</p>
+            <p>나머지 내용입니다.</p>
+            <p>나머지 내용입니다.</p>
+            <p>나머지 내용입니다.</p>
+        </section>
+
+        <h2>Wells</h2>
+
+        <div class="well">소규모의 독립된 영역을 만들고자 할 때 사용</div>
+        <div class="well well-sm">소규모의 독립된 영역을 만들고자 할 때 사용</div>
+        <div class="well well-lg">소규모의 독립된 영역을 만들고자 할 때 사용</div>
+        <pre>소규모의 독립된 영역을 만들고자 할 때 사용</pre>
+        <!-- pre >> 엔터,스페이스바 다 적용됨 well추천! -->
+
+        <h2>Alerts</h2>
+
+        <div class="alert alert-success">
+            <strong>Java</strong>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eligendi ab, ipsam distinctio quae
+            asperiores placeat odit quibusdam fugit optio, culpa iusto harum laudantium est, cum unde itaque dignissimos
+            eaque.
+        </div>
+
+        <div class="alert alert-info">
+            <strong>Java</strong>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eligendi ab, ipsam distinctio quae
+            asperiores
+            placeat odit quibusdam fugit optio, culpa iusto harum laudantium est, cum unde itaque dignissimos eaque.
+        </div>
+        <div class="alert alert-warning">
+            <strong>Java</strong>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eligendi ab, ipsam distinctio quae
+            asperiores
+            placeat odit quibusdam fugit optio, culpa iusto harum laudantium est, cum unde itaque dignissimos eaque.
+        </div>
+        <div class="alert alert-danger">
+            <strong>Java</strong>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eligendi ab, ipsam distinctio quae
+            asperiores
+            placeat odit quibusdam fugit optio, culpa iusto harum laudantium est, cum unde itaque dignissimos eaque.
+        </div>
+
+
+        <div class="alert alert-danger alert-dismissable fade in">
+            <a href = "#" class = "close" data-dismiss= "alert" aria-labe = "close">&times;</a>
+            <strong>주의사항!!!</strong>
+            반드시 사진은 20cm x 20cm 미만으로 첨부해야 합니다.
+        </div>
+
+        <h2>아이콘</h2>
+        <p id = "p1">
+        <span class = "glyphicon glyphicon-home"></span>
+        <span class = "glyphicon glyphicon-eye-open"></span>
+        <img src = "../images/bullet01.png">
+        </p>
+
+        <style>
+            #p1>img{width:100px;}
+            #p1>span{font-size: 100px; color: cornflowerblue;} 
+            /* glyphicon >> 글자 취급 >> 키울려면 font사이즈로 품질이 좋다!*/
+        </style>
+        <hr>
+
+        <h2><span class = "glyphicon glyphicon-heart"></span>HTML 학습 사이트</h2>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati illo quisquam dolorum incidunt cumque minus perspiciatis omnis aut, commodi vero iusto autem, temporibus optio error aliquid consectetur ipsa labore possimus?</p>
+
+        <div class = "alert alert-danger">
+            <strong><span class = "glyphicon glyphicon-alert"></span>공부할 때 주의점!!</strong>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aperiam impedit veritatis commodi fugiat, aliquid tenetur natus minima soluta facere, officiis saepe quaerat reprehenderit magnam numquam, nostrum ea aspernatur autem!
+        </div>
+
+        <p><input type = "button" value = "Search" class = "btn btn-primary"></p>
+
+        <p><button class = "btn btn-primary"><span class = "glyphicon glyphicon-search"></span> Search</button></p>
+
+        <h2>배지,Badges</h2>
+
+        <ul>
+            <li>Java <span class = "badge">5</span></li>
+            <li>Oracle</li>
+            <li>JDBC <span class = "badge">22</span></li>
+            <li>HTML <span class = "badge">1</span></li>
+        </ul>
+
+        <button class = "btn btn-danger">
+            <span class = "glyphicon glyphicon-trash"></span>
+            Remove Items
+            <span class = "badge">3</span>
+        </button>
+
+        <h2>Label</h2>
+
+        <p>반갑습니다. 방금 가입했습니다~ <span class = "label label-default">new</span></p>
+        <p>반갑습니다. 방금 가입했습니다~ <span class = "label label-primary">new</span></p>
+        <p>반갑습니다. 방금 가입했습니다~ <span class = "label label-success">new</span></p>
+        <p>반갑습니다. 방금 가입했습니다~ <span class = "label label-info">new</span></p>
+        <p>반갑습니다. 방금 가입했습니다~ <span class = "label label-warning">new</span></p>
+        <p>반갑습니다. 방금 가입했습니다~ <span class = "label label-danger">new</span></p>
+
+        <h2>Pagination,페이지바</h2>
+
+        <ul class = "pagination">
+            <li><a href = "#">1</a></li>
+            <li><a href = "#">2</a></li>
+            <li><a href = "#">3</a></li>
+            <li><a href = "#">4</a></li>
+            <li class = "active"><a href = "#">5</a></li>
+            <li><a href = "#">6</a></li>
+            <li><a href = "#">7</a></li>
+            <li class = "disabled"><a href = "#">8</a></li>
+            <li><a href = "#">9</a></li>
+            <li><a href = "#">10</a></li>
+        </ul>
+
+        <h2>Pager</h2>
+
+        <ul class = "pager">
+            <li class = "previous"><a href = "#"><span class = "glyphicon glyphicon-backward"></span> 이전 페이지</a></li>
+            <li class = "next"><a href = "#">다음 페이지 <span class = "glyphicon glyphicon-forward"></span></a></li>
+        </ul>
+
+        <h2>list</h2>
+
+        <!-- ul>(li>lorem5)*10 -->
+        <!-- ul>(li[class=list-group-item]>lorem5)*10 -->
+        <ul class = "list-group" style= "width:400px;">
+            <li class="list-group-item">Lorem ipsum dolor sit amet.</li>
+            <li class="list-group-item">Quis voluptatum harum neque vitae.<span class = "badge">12</span></li>
+            <li class="list-group-item">Vitae aliquam expedita fugiat labore?</li>
+            <li class="list-group-item">Ipsam ullam minima ipsa sint.</li>
+            <li class="list-group-item">Voluptatibus officia ipsam obcaecati distinctio!</li>
+            <li class="list-group-item">Ab totam necessitatibus magni soluta!  <span class = "glyphicon glyphicon-headphones" style = "float:right; font-size: 1.2em; color: tomato;"></span></li>
+            <li class="list-group-item">Exercitationem distinctio consequuntur voluptate est?</li>
+            <li class="list-group-item list-group-item-danger">Incidunt quia culpa dolorum vero?<span class = "badge">22</span></li>
+            <li class="list-group-item">Eveniet veniam explicabo nulla ipsum.<span class = "badge">5</span></li>
+            <li class="list-group-item">Perferendis accusamus ducimus hic nihil.<span class = "label label-info">notice!!</span></li>
+        </ul>
+
+
+
+    </div>
+    <!--container-->
+</body>
+
+</html>
