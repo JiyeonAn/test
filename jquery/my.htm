@@ -9,8 +9,9 @@
 	
 	<!-- Mobile Specific Meta -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-	
+	<link rel = "stylesheet" href = "css/bootstrap.css">
 	<script src="js/jquery-1.12.4.js"></script>
+    <script src ="js/bootstrap.js"></script>
 	<!-- FONTS -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
@@ -104,24 +105,13 @@
 }
 
 #btn{
-	color: black;
+	color: white;
 	font-size: 14px;
 	font-weight: bold;
 	text-align: center;
 }
 
-#resume,#rsm{
 
-	background-color: #70B9B0;
-}
-
-#resume-link a.nav-current i,li#resume-link a.nav-current h3{
-	color: #70B9B0;
-}
-
-li#resume-link a.nav-current {
-	border-color: #70B9B0;
-}
 
 #scription li span, #scription li p, #scription2 li span, #scription2 li p{
 	font-weight: bold;
@@ -213,6 +203,18 @@ h3{
 	font-weight: bold;
 }
 
+#resume,#rsm{
+
+background-color: #70B9B0;
+}
+
+#resume-link a.nav-current i,li#resume-link a.nav-current h3{
+color: #70B9B0;
+}
+
+li#resume-link a.nav-current {
+border-color: #70B9B0;
+}
 #resume, #resume .cat-pages-title h2 {
     background-color: #70B9B0;
 }
@@ -225,7 +227,7 @@ h3{
 }
 
 #logo{
-	height: 160px;
+	height: 207px;
 }
 
 .line{
@@ -248,8 +250,19 @@ h3{
     
 }
 
-#about, #about .cat-pages-title h2{
-	background-color: rgb(248, 114, 101);
+
+
+
+li#about-link a.nav-current h3, li#about-link a.nav-current i {
+    color: #D1423C;
+}
+
+li#about-link a.nav-current {
+    border-color: #D1423C;
+}
+
+#about, #about .cat-pages-title h2 {
+    background-color: #D1423C;
 }
 
 
@@ -262,17 +275,38 @@ h3{
 
 #btn{
 	/* border: 1px solid black; */
+	color: white;
 	position: fixed;
 	margin-top: 20px;
+	opacity: .6;
 }
 
 #btn1, #btn2{
 	border-radius: 10%;
+	
 }
 
 
 
 
+#downloa{
+	padding-left: 50px;
+
+
+}
+
+#contact, #contact .cat-pages-title h2
+{
+	background-color: #52707B;
+	
+
+}
+li#contact-link a.nav-current {
+    border-color: #52707B;
+}
+#contact-link a.nav-current i, li#contact-link a.nav-current h3 {
+    color: #52707B;
+}
 
 
 
@@ -293,7 +327,7 @@ $(document).ready(function(){
 
 		$("#resume").animate({
 					scrollTop: 1000
-				},1000); 
+				},700); 
 	});
 
 	$("#btn1").click(function(){
@@ -301,12 +335,19 @@ $(document).ready(function(){
 		$("#resume").animate({
 			scrollTop: 0
 
-		},1000)
+		},700)
 		
 	})
 
 
 }); 
+
+
+
+function view(url) {
+	window.open(url, "view", "width=1200px, height=1900px");
+	event.preventDefault();
+}
 
 </script>
 
@@ -393,7 +434,7 @@ $(document).ready(function(){
 						안지연(Jiyeon An)
 					</h2>
 					<p>
-						Hi, I’M a professional <span>SI designrer</span> and <span>Web developer</span>. I love being minimal and creative. Do you wanna know about me more? Click on about Me!
+						Hi, I’M a professional <span>SI</span> and <span>Web developer</span>. I love being minimal and creative. Do you wanna know about me more? Click on about Me!
 					</p>
 				</header>
 			</div>
@@ -525,20 +566,11 @@ $(document).ready(function(){
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 					<div class="about-buttons">
 
-						<div class="btn">
+						<div class="btn" id = "downloa">
 							<a href="#">
 								<i class="fa fa-arrow-down"></i>
 								<span>
 								download resume
-								</span>
-							</a>
-						</div>
-
-						<div class="btn">
-							<a href="#contact" class="page-scroll contact-button">
-								<i class="fa fa-envelope"></i>
-								<span>
-								contact me
 								</span>
 							</a>
 						</div>
@@ -556,8 +588,8 @@ $(document).ready(function(){
 	<section id="resume" class="cat-pages">
 		<div class="container-liquid">
 				<div id = "btn">
-						<input type = "button" value = "TIMELINE" class="btn btn-default" id = "btn1">
-						<input type = "button" value = "SKILLS" class="btn btn-default" id = "btn2">
+						<button  class="btn btn-default" id = "btn1"><span class="glyphicon glyphicon-chevron-up"></span> TIMELINE</button>
+						<button  class="btn btn-default" id = "btn2"><span class="glyphicon glyphicon-chevron-down"></span> SKILLS</button>
 					</div>
 						
 
@@ -660,23 +692,7 @@ $(document).ready(function(){
 
 			<div class="sec2_box_wrap" id = "skills">
             
-							<img src = "../images/JAVA.jpg" class = "img">
-                           
-                        
-                        
-								<img src = "../images/JAVASCRIPT.jpg"class = "img">
-                            
-                       
-								<img src = "../images/jquery.jpg"class = "img">
-								<img src = "../images/htmlcss.jpg" class = "img">
-								<img src = "../images/php.jpg" class = "img">
-								<img src = "../images/oracle.png" class = "img">
-								<img src = "../images/mssql.jpg" class = "img">
-								<img src = "../images/english.jpg" class = "img">
-								<img src = "../images/swedish.jpg" class = "img">
-
-                            
-						<br><br>
+						
 
 						<!-- Skills Start -->
 						<div class="row" id = "row">
@@ -745,6 +761,28 @@ $(document).ready(function(){
 									</div>
 								</div>
 							</div><!-- end SKILLS -->
+
+						
+
+							<img src = "../images/JAVA.png" class = "img">
+                           
+                        
+                        
+							<img src = "../images/JAVASCRIPT.png"class = "img">
+						
+				   
+							<img src = "../images/jquery.png"class = "img">
+							<img src = "../images/htmlcss.png" class = "img">
+							<img src = "../images/php.png" class = "img">
+							<img src = "../images/oracle.png" class = "img">
+							<img src = "../images/mysql.png" class = "img">
+							<img src = "../images/english.png" class = "img">
+							<img src = "../images/swedish.png" class = "img">
+
+							<br><br>
+
+						
+					
 				
                    
                 </div>
@@ -792,7 +830,7 @@ $(document).ready(function(){
 
 					<ul>
 						<li>
-							<a class="popup-image" href="https://github.com/JiyeonAn/test.git" title="My Portfolio">
+							<a href="#" onclick="view('myproject1.htm');" id = "shopping"> 
 								<img src="../images/lunchbox.jpg
 								" alt="Portfolio Image" class="web">
 								<div class="portfolio-description">
@@ -806,8 +844,8 @@ $(document).ready(function(){
 							</a>
 						</li>
 						<li>
-							<a class="popup-image" href="https://github.com/JiyeonAn/test.git" title="My Portfolio">
-								<img src="../images/tetris.png
+							<a href="#" onclick="view('myproject2.htm');" id = "tetris">
+								<img src="../images/tetris.jpg
 								" alt="Portfolio Image" class="logo" id = "logo">
 								<div class="portfolio-description">
 									<h3>
@@ -820,7 +858,7 @@ $(document).ready(function(){
 							</a>
 						</li>
 						<li>
-							<a class="popup-image" href="https://github.com/JiyeonAn/test.git" title="My Portfolio">
+							<a href="#" onclick="view('myproject3.htm');"  id= "aircon">
 								<img src="../images/airconditioner.jpg
 								" alt="Portfolio Image" class="logo photography">
 								<div class="portfolio-description">
@@ -834,7 +872,7 @@ $(document).ready(function(){
 							</a>
 						</li>
 						<li>
-							<a class="popup-image" href="https://github.com/JiyeonAn/test.git" title="My Portfolio">
+							<a href="#" onclick="view('myproject4.htm');"  id="delivery">
 								<img src="../images/delivery.jpg
 								" alt="Portfolio Image" class="photography">
 								<div class="portfolio-description">
@@ -848,7 +886,7 @@ $(document).ready(function(){
 							</a>
 						</li>
 						<li>
-							<a class="popup-image" href="https://github.com/JiyeonAn/test.git" title="My Portfolio">
+							<a href="#" onclick="view('myproject5.htm');" id = "edu" >
 								<img src="../images/education.jpg
 								" alt="Portfolio Image" class="web photography">
 								<div class="portfolio-description">
@@ -862,7 +900,7 @@ $(document).ready(function(){
 							</a>
 						</li>
 						<li>
-							<a class="popup-image" href="https://github.com/JiyeonAn/test.git" title="My Portfolio">
+							<a href="#" onclick="view('myproject6.htm');"  id="pfo">
 								<img src="../images/website.jpg
 								" alt="Portfolio Image" class="logo web">
 								<div class="portfolio-description">
@@ -954,7 +992,7 @@ $(document).ready(function(){
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 					<div class="col-lg-9 col-md-10 col-sm-10 col-xs-11 mylocation">
-						<img src = "../images/location.jpg" id = "location">
+						<!-- <img src = "../images/location.jpg" id = "location"> -->
 					</div>
 				</div>
 			</div><!-- end GOOGLE MAP -->
@@ -988,11 +1026,11 @@ $(document).ready(function(){
 
 
 						<div class="col-lg-7 col-md-12 col-sm-7 col-xs-12 contact-form">
-							<form method="post" id="contactform" name="contactform">
-								<input type="text" name="name" id="name" placeholder="name">
-								<input type="email" name="email" id="email" placeholder="email">
-								<input type="text" name="subject" id="subject" placeholder="subject">
-								<textarea name="message" id="message" placeholder="message"></textarea>
+							<form method="post" id="contactform" name="contactform" style= "color: white;">
+								<input type="text" name="name" id="name" placeholder="name"  style= "color: white;">
+								<input type="email" name="email" id="email" placeholder="email"  style= "color: white;">
+								<input type="text" name="subject" id="subject" placeholder="subject"  style= "color: white;">
+								<textarea name="message" id="message" placeholder="message"  style= "color: white;"></textarea>
 								<input type="submit" name="submit" id="submit" value="submit">
 							</form>
 
@@ -1039,6 +1077,8 @@ $(document).ready(function(){
 		
 		// BACKGROUND IMAGE/SLIDESHOW SCRIPT
 		$('#background').backstretch("../images/background5.jpg");
+
+	
 
 	
 
