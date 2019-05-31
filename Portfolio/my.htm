@@ -1,0 +1,1037 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Balloon</title>
+	<meta name="description" content="My Personal Website">
+	<meta name="author" content="8Eyelashes">
+	
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	
+	<script src="js/jquery-1.12.4.js"></script>
+	<!-- FONTS -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+
+	<!-- FAVICON -->
+	<!-- <link rel="icon" href="favicon.ico" type="image/x-icon" /> 
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> -->
+
+	<!-- STYLESHEETS -->
+	<link rel='stylesheet' href='https://d33wubrfki0l68.cloudfront.net/bundles/a2386e749eb3a0a471e3bd6620e5b8daf8c83dfa.css'/>
+	
+	
+	
+	
+	
+
+</head>
+<style>
+
+	.skill-item>h5{
+		font-weight: bold;
+	}
+
+#photomin{
+
+	width: 180px;
+	height: 205px;
+	margin-top: 0px;
+}
+/* 
+#background{
+	width: 1200px;
+	height: 1000px;
+} */
+
+#custom-preloader{
+	opacity: .7;
+}
+
+#location{
+	width: 1000px;
+	height: 400px;
+	padding-left: 180px;
+}
+.cat-pages {
+    display: none;
+    position: absolute;
+    float: none;
+    width: 65%;
+    height: 100vh;
+    /* left: 25%; */
+    color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    z-index: 1;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.cat-left-50 {
+    left: 35%!important;
+}
+#content-wrap {
+    display: block;
+    position: absolute;
+    float: none;
+    width: 35%;
+    height: 100vh;
+    /* background-image: url(/images/1a7e7f5…/pattern.jpg); */
+    background-repeat: repeat;
+    left: 30%;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    z-index: 4;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    -webkit-box-shadow: 0 0 10px 1px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 0 10px 1px rgba(0,0,0,.2);
+    box-shadow: 0 0 10px 1px rgba(0,0,0,.2);
+}
+
+#resume, #blog{
+	width: 65%;
+    height: 100vh;
+}
+
+#row{
+	padding-bottom: 120px;
+}
+
+#btn{
+	color: black;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#resume,#rsm{
+
+	background-color: #70B9B0;
+}
+
+#resume-link a.nav-current i,li#resume-link a.nav-current h3{
+	color: #70B9B0;
+}
+
+li#resume-link a.nav-current {
+	border-color: #70B9B0;
+}
+
+#scription li span, #scription li p, #scription2 li span, #scription2 li p{
+	font-weight: bold;
+}
+
+
+#challenge{
+	width: 200px;
+	height: 160px;
+	padding-bottom: 0px;
+	padding-left:0px;
+}
+
+
+#lettermain{
+	padding-left: 10px;
+	margin-left: 20px;
+}
+
+#lettermain2,#letter1{
+	/* padding-right: 10px; */
+	margin-right: 20px;
+	margin-left: 0px;
+}
+
+.about-description:after {
+    content: "";
+    display: block;
+    margin: 0 auto 2px;
+    float: none;
+    padding: 0 0 3px;
+    border-bottom: 1px dashed rgba(255,255,255,.5);
+    width: 140px;
+}
+
+#lifetime{
+	padding-left: 0px;
+
+}
+
+.iconbox ul li h3{
+	margin-left: 100px;
+}
+.iconbox ul li p {
+    /* display: block; */
+    /* position: relative; */
+    text-align: left;
+	padding-left: 190px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: .03em;
+}
+
+.img{
+	margin-left: 13px;
+	width: 120px;
+	height:120px;
+}
+
+.col-3{
+	float:left;
+}
+
+.timeline h3 {
+    border-bottom-color: rgb(209, 228, 226);
+}
+
+
+
+
+.iconbox ul li #letter, .iconbox ul li #letter2 {
+    
+    
+    list-style: none;
+    -webkit-transition: all .4s linear;
+    -o-transition: all .4s linear;
+	transition: all .4s linear;
+	
+	
+
+
+}
+
+h3{
+	font-weight: bold;
+}
+
+#resume, #resume .cat-pages-title h2 {
+    background-color: #70B9B0;
+}
+
+.portfolio-description{
+	color: rgb(167, 166, 166);
+	font-style:oblique;
+	font-weight: bold;
+	margin-bottom: 50px;
+}
+
+#logo{
+	height: 160px;
+}
+
+.line{
+	width: 700px;
+	margin-left: 90px;
+	
+}
+
+#lifetime{
+	margin-left: 150px;
+	font-weight: bold;
+
+}
+
+
+
+.about-description:after {
+    content: "";
+    display: none;
+    
+}
+
+#about, #about .cat-pages-title h2{
+	background-color: rgb(248, 114, 101);
+}
+
+
+
+.iconbox ul li.iconbox-right h3, .iconbox ul li.iconbox-right p {
+    text-align: left;
+    padding: 0 120px 0 0;
+	margin-left: 220px;
+}
+
+#btn{
+	/* border: 1px solid black; */
+	position: fixed;
+	margin-top: 20px;
+}
+
+#btn1, #btn2{
+	border-radius: 10%;
+}
+
+
+</style>
+<script>
+$(document).ready(function(){
+
+	$("#btn2").click(function(){
+
+		$("#resume").animate({
+					scrollTop: 1000
+				},1000); 
+	});
+
+	$("#btn1").click(function(){
+
+		$("#resume").animate({
+			scrollTop: 0
+
+		},1000)
+		
+	})
+
+
+}); 
+
+</script>
+
+<body>
+	<!-- BACKGROUND -->
+	<section id="background">
+	</section>
+	<!-- end BACKGROUND -->
+
+
+	<!-- RESPONSIVE MENU -->
+	<div id="responsive-menu">
+		<a href="#" id="responsive-menu-list">
+			<div class="responsive-menu-bar">
+				<span>Menu</span>
+				<i class="fa fa-list"></i>
+			</div>
+		</a>
+		<ul class="responsive-menu-disable">
+			<li>
+				<a href="#content-wrap" class="page-scroll-responsive">
+					<i class="fa fa-long-arrow-left"></i>
+					<h3>
+						back to home
+					</h3>
+				</a>
+			</li>
+			<li>
+				<a href="#about" class="page-scroll-responsive">
+					<i class="fa fa-user"></i>
+					<h3>
+						about me
+					</h3>
+				</a>
+			</li>
+			<li>
+				<a href="#resume" class="page-scroll-responsive">
+					<i class="fa fa-globe"></i>
+					<h3 id = "rsm1">
+						resume
+					</h3>
+				</a>
+			</li>
+			<li>
+				<a href="#portfolio" class="page-scroll-responsive">
+					<i class="fa fa-book nav-left"></i>
+					<h3>
+						portfolio
+					</h3>
+				</a>
+			</li>
+			<li>
+				<a href="#blog" class="page-scroll-responsive">
+					<i class="fa fa-paperclip"></i>
+					<h3>
+						blog
+					</h3>
+				</a>
+			</li>
+			<li>
+				<a href="#contact" class="page-scroll-responsive">
+					<i class="fa fa-envelope"></i>
+					<h3>
+						contact
+					</h3>
+				</a>
+			</li>
+
+		</ul>
+	</div><!-- end RESPONSIVE MENU -->
+
+
+	<!-- MAIN CONTENT -->
+	<section id="content-wrap" class = "cat-right-40">
+		<div class="container-liquid" id = "mainmain">
+			
+			<div class="row">
+				<header class="col-lg-12 col-md-12 col-sm-12 col-xs-12 main-content">
+					<div class="profile-avatar overlay">
+						<img src="../images/내사진.jpg" id = 
+						"photomin" alt="My Photo">
+					</div>
+					<h2>
+						안지연(Jiyeon An)
+					</h2>
+					<p>
+						Hi, I’M a professional <span>SI designrer</span> and <span>Web developer</span>. I love being minimal and creative. Do you wanna know about me more? Click on about Me!
+					</p>
+				</header>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 navigations">
+					<ul>
+
+						<li id="about-link">			
+							<a href="#about" class="page-scroll page-right">
+								<h3>
+									about ME!
+								</h3>
+								<i class="fa fa-user nav-right"></i>
+							</a>
+						</li>	
+
+						<li id="resume-link">
+							<a href="#resume" class="page-scroll page-right">
+								<h3 id = "rsm3">
+									resume
+								</h3>
+								<i class="fa fa-globe nav-right"></i>
+							</a>
+						</li>
+
+						<li id="portfolio-link">
+							<a href="#portfolio" class="page-scroll page-right">
+								<h3>
+									projects
+								</h3>
+								<i class="fa fa-book nav-right"></i>
+							</a>
+						</li>
+										
+						<li id="contact-link" class="contact-link">
+							<a href="#contact" class="page-scroll page-right">
+								<h3>
+									contact
+								</h3>
+								<i class="fa fa-envelope nav-right"></i>
+							</a>
+						</li>
+						
+					</ul>
+				</div>
+			</div>
+
+			
+		</div>
+	</section><!-- end MAIN CONTENT -->
+
+
+
+	<!-- ABOUT -->
+	<section id="about" class="cat-pages">
+		<div class="container-liquid">
+
+			<!-- TITLE -->
+			<div class="row">
+				<header class="col-lg-12 col-md-12 col-sm-12 col-xs-12 cat-pages-title">
+					<div class="title-seprator"></div>
+					<h2>
+						about ME!
+					</h2>
+				</header>
+			</div><!-- end TITLE -->
+
+			<!-- DESCRIPTION -->
+			<div class="row">
+				<div class="col-lg-8 col-md-9 col-sm-9 col-xs-10 about-description">
+					<p>
+						안녕하세요. 저는 도전적인 개발자, 안지연입니다. 
+					Java를 기본으로 하여 Sql,Oracle,HTML,Javascript,JQuery 등의 교육을 듣고 개발자로 성장하였습니다.
+					</p>
+				</div>
+			</div><!-- end DESCRIPTION -->
+
+			<!-- ICONBOX -->
+			<div class="row">
+				<div class="col-lg-8 col-md-9 col-sm-9 col-xs-9 iconbox">
+					<ul>
+						<li>
+							<hr class = "line">
+							<h3 id = "lifetime">
+									
+									lifetime 가치관,  "한번 정한 길에서 최고가 되자!"
+							</h3>
+							<hr class = "line">
+						</li>
+						<li>
+							<img src = "../images/challenge.jpg" id = "challenge" style="float: left;">
+							
+							<div id = "letter">
+								<h3>
+									도전적인 개발자입니다.
+								</h3>
+							</div>
+							<br>
+							<div id= "lettermain">
+							<p>
+저는 창의적이고 도전하는 것을 좋아합니다. 매번 프로젝트에 참여할 때마다 다른 분야에서의 개발을 도전하였고 매번 성공으로 이끌었습니다. 
+							</p>
+						</div>
+						</li>
+						<li class="iconbox-right">
+								<img src = "../images/improve.jpg" id = "challenge" style="float: left;">
+								<div id = "letter2">
+							<h3>
+								시스템을 개선할 수 있는 개발자입니다.
+							</h3>
+							</div>
+							<div id = "lettermain2">
+							<p>
+								저는 산업공학과 IT를 융합하는 인재입니다.
+								4년동안 산업공학도로서 문제 해결법, 최적화에 대해서 공부하였습니다. 저의 개발 역량과 전공지식을 융합하여 최고의 시스템 개발자가 되겠습니다. 
+								
+							</p>
+						</div>
+							
+						</li>
+					
+					</ul>
+				</div>
+			</div><!-- end ICONBOX -->
+
+			<!-- BUTTONS -->
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="about-buttons">
+
+						<div class="btn">
+							<a href="#">
+								<i class="fa fa-arrow-down"></i>
+								<span>
+								download resume
+								</span>
+							</a>
+						</div>
+
+						<div class="btn">
+							<a href="#contact" class="page-scroll contact-button">
+								<i class="fa fa-envelope"></i>
+								<span>
+								contact me
+								</span>
+							</a>
+						</div>
+
+					</div>
+				</div>
+			</div><!-- end BUTTONS -->
+
+		</div>
+	</section><!-- end ABOUT -->
+
+
+
+	<!-- RESUME -->
+	<section id="resume" class="cat-pages">
+		<div class="container-liquid">
+				<div id = "btn">
+						<input type = "button" value = "TIMELINE" class="btn btn-default" id = "btn1">
+						<input type = "button" value = "SKILLS" class="btn btn-default" id = "btn2">
+					</div>
+						
+
+			<!-- TITLE -->
+			<div class="row">
+				<header class="col-lg-12 col-md-12 col-sm-12 col-xs-12 cat-pages-title">
+					<div class="title-seprator"></div>
+					<h2 id = "rsm">
+						resume
+					</h2>
+				</header>
+			</div><!-- end TITLE -->
+
+			
+
+			<!-- TIMELINE -->
+			<div class="row" id = "timelinepart">
+				<div class="col-lg-9 col-md-9 col-sm-9 col-xs-10 timeline">
+
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 timeline-left">
+						<i class="fa fa-graduation-cap"></i>
+						<h3>
+							Education
+						</h3>
+						<ul id = "scription">
+							<li style="margin-top: 90px;">
+								<span>
+									March 2015 - Febuary 2019
+								</span>
+								<h4>
+									KHU (KhyungHee University)
+								</h4>
+								<p>
+									경희대학교에 입학하여 4년동안 산업경영공학도로서 물류, 품질, 최적화, 빅데이터 분석, 인공지능 등의 4차산업혁명에 걸맞는 산업에 대해 공부하였고, 시뮬레이션, 창의적종합설계 등의 실습으로 실제로 문제를 개선하는데 감을 익혔습니다.
+								</p>
+							</li>
+							<li>
+								<span>
+									January 2019 - August 2019
+								</span>
+								<h4>
+									쌍용 IT교육센터
+								</h4>
+								<p>
+									졸업 후,개발자로의 길을 걷기 위해 국비지원의 교육을 들었습니다. '웹 개발자 양성 과정'으로 1120시간 가량의 교육을 받았습니다.
+								</p>
+							</li>
+						</ul>
+					</div>
+
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 timeline-right">
+						<i class="fa fa-briefcase"></i>
+						<h3>
+							Projects
+						</h3>
+						<ul id = "scription2">
+							<li>
+								<span>
+									September 2007 - March 2015
+								</span>
+								<h4>
+									워드프로세서, 한자 6급 취득
+								</h4>
+								<p>
+									
+								</p>
+							</li>
+							<li>
+								<span>
+									March 2015 - Febuary 2019
+								</span>
+								<h4>
+									10번의 프로젝트
+								</h4>
+								<p>
+									학과목을 들으며 여러 프로젝트를 진행해왔습니다. IT분야로는 인공지능, 데이터베이스를 구축하였고, 산업공학분야로는 시뮬레이션, 최적화, 생산관리, SCM, CRM 등의 프로젝트를 수행했습니다.
+								</p>
+							</li>
+							<li>
+								<span>
+									January 2019 - present
+								</span>
+								<h4>
+									웹 개발자,정보처리기사 취득
+								</h4>
+								<p>
+									배달 앱 서비스, 교육 프로그램의 내부 시스템을 개발하는 프로젝트를 수행했습니다.
+								</p>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div><!-- end TIMELINE -->
+
+			<hr>
+			<!-- <a href = #skills > -->
+			
+		<!-- </a> -->
+
+			<div class="sec2_box_wrap" id = "skills">
+            
+							<img src = "../images/JAVA.jpg" class = "img">
+                           
+                        
+                        
+								<img src = "../images/JAVASCRIPT.jpg"class = "img">
+                            
+                       
+								<img src = "../images/jquery.jpg"class = "img">
+								<img src = "../images/htmlcss.jpg" class = "img">
+								<img src = "../images/php.jpg" class = "img">
+								<img src = "../images/oracle.png" class = "img">
+								<img src = "../images/mssql.jpg" class = "img">
+								<img src = "../images/english.jpg" class = "img">
+								<img src = "../images/swedish.jpg" class = "img">
+
+                            
+						<br><br>
+
+						<!-- Skills Start -->
+						<div class="row" id = "row">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 skills">
+				
+										<div class="skills-title">
+											<h3>
+												skills
+											</h3>
+											<i class="fa fa-flash"></i>
+										</div>
+										<div class="col-lg-3 col-md-6 col-sm-3 col-xs-6 skill-item">
+												<input type="text" value="92" class="dial">
+												<h5>
+													Java
+												</h5>
+											</div>
+				
+										<div class="col-lg-3 col-md-6 col-sm-3 col-xs-6 skill-item">
+											<input type="text" value="80" class="dial">
+											<h5>
+												HTML5/CSS3
+											</h5>
+										</div>
+				
+										<div class="col-lg-3 col-md-6 col-sm-3 col-xs-6 skill-item">
+											<input type="text" value="80" class="dial">
+											<h5>
+												php
+											</h5>
+										</div>
+				
+										
+										<div class="col-lg-3 col-md-6 col-sm-3 col-xs-6 skill-item">
+												<input type="text" value="85" class="dial">
+												<h5>
+													MySQL
+												</h5>
+											</div>
+											<div class="col-lg-3 col-md-6 col-sm-3 col-xs-6 skill-item">
+													<input type="text" value="60" class="dial">
+													<h5>
+														MSSQL
+													</h5>
+												</div>
+												<div class="col-lg-3 col-md-6 col-sm-3 col-xs-6 skill-item">
+														<input type="text" value="63" class="dial">
+														<h5>
+															JavaScript/JQuery
+														</h5>
+													</div>
+													<div class="col-lg-3 col-md-6 col-sm-3 col-xs-6 skill-item">
+															<input type="text" value="87" class="dial">
+															<h5>
+																English
+															</h5>
+														</div>
+														<div class="col-lg-3 col-md-6 col-sm-3 col-xs-6 skill-item">
+																<input type="text" value="54" class="dial">
+																<h5>
+																	Swedish
+																</h5>
+															</div>
+				
+									</div>
+								</div>
+							</div><!-- end SKILLS -->
+				
+                   
+                </div>
+			
+		
+
+		</div>
+	</section><!-- end RESUME -->
+
+
+
+	<!-- PORTFOLIO -->
+	<section id="portfolio" class="cat-pages">
+		<div class="container-liquid">
+
+			<!-- TITLE -->
+			<div class="row">
+				<header class="col-lg-12 col-md-12 col-sm-12 col-xs-12 cat-pages-title">
+					<div class="title-seprator"></div>
+					<h2>
+						projects
+					</h2>
+				</header>
+			</div><!-- end TITLE -->
+
+			<!-- FILTERS -->
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="portfolio-fliter">
+						<ul>
+							<li class="current"><a href="#">all</a></li>
+							<li><a href="#">System</a></li>
+							<li><a href="#">DB/JDBC</a></li>
+							<li><a href="#">Web</a></li>
+							<li><a href="#">AI</a></li>
+						</ul>
+					</div>
+				</div>
+			</div><!-- end FILTERS -->
+
+
+			<!-- GALLERY -->
+			<div class="row">
+				<div class="col-lg-9 col-md-12 col-sm-12 col-xs-12 portfolio-items">
+
+					<ul>
+						<li>
+							<a class="popup-image" href="https://github.com/JiyeonAn/test.git" title="My Portfolio">
+								<img src="../images/lunchbox.jpg
+								" alt="Portfolio Image" class="web">
+								<div class="portfolio-description">
+									<h3>
+										온라인 도시락 쇼핑몰
+									</h3>
+									<p>
+										신선하고 건강한 재료만을 담은 도시락을 쇼핑몰형태로 제공하는 웹페이지를 구현
+									</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a class="popup-image" href="https://github.com/JiyeonAn/test.git" title="My Portfolio">
+								<img src="../images/tetris.png
+								" alt="Portfolio Image" class="logo" id = "logo">
+								<div class="portfolio-description">
+									<h3>
+										스마트 Tetris
+									</h3>
+									<p>
+										스스로 게임하여 승률을 올리는 스마트 테티레스 게임을 개발
+									</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a class="popup-image" href="https://github.com/JiyeonAn/test.git" title="My Portfolio">
+								<img src="../images/airconditioner.jpg
+								" alt="Portfolio Image" class="logo photography">
+								<div class="portfolio-description">
+									<h3>
+										자동 군집분석을 이용한 인공지능 공조시스템
+									</h3>
+									<p>
+										스스로 최적의 불쾌지수로 군집가동할 수 있는 공조시스템 개발
+									</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a class="popup-image" href="https://github.com/JiyeonAn/test.git" title="My Portfolio">
+								<img src="../images/delivery.jpg
+								" alt="Portfolio Image" class="photography">
+								<div class="portfolio-description">
+									<h3>
+										배달 앱 서비스 내부시스템 개발
+									</h3>
+									<p>
+										(고객,점주,본사,라이더 포함)모든 사용자들을 위한 통합 배달 시스템 개발
+									</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a class="popup-image" href="https://github.com/JiyeonAn/test.git" title="My Portfolio">
+								<img src="../images/education.jpg
+								" alt="Portfolio Image" class="web photography">
+								<div class="portfolio-description">
+									<h3>
+										쌍용 교육 시스템 개발
+									</h3>
+									<p>
+										(교사,매니저,학생 포함)모든 사용자들을 위한 교육 내부시스템 개발
+									</p>
+								</div>
+							</a>
+						</li>
+						<li>
+							<a class="popup-image" href="https://github.com/JiyeonAn/test.git" title="My Portfolio">
+								<img src="../images/website.jpg
+								" alt="Portfolio Image" class="logo web">
+								<div class="portfolio-description">
+									<h3>
+										포트폴리오 제작
+									</h3>
+									<p>
+										JQuery,Javascript를 기반으로 포트폴리오용 웹 개발
+									</p>
+								</div>
+							</a>
+						</li>
+						
+					</ul>
+
+				</div>
+			</div><!-- end GALLERY -->
+
+			<!-- QUOTES -->
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="col-lg-9 col-md-9 col-sm-8 col-xs-11 quotes">
+
+						<ul id="quote-slideshow">
+
+							<li>
+									<div class="quote-name">
+											<span>
+												의사소통
+											</span>
+										</div>
+								<p>
+									팀 단위의 프로젝트를 하면서, 저 혼자만이 잘하는 것이 아닌 모두가 함께 목표를 향해 나아갈 때 일의 성과가 나온다는 것을 깨달았습니다.
+								</p>
+								
+							</li>
+
+							<li>
+									<div class="quote-name">
+											<span>
+												문서화과정
+											</span>
+										</div>
+								<p>
+									 개발보다 더 시간을 많이 들여야 하는 것은 문서화 과정이었습니다. 고객의 요구사항을 분석하고, 기능 명세서 작성, 화면 설계의 중요성을 느꼈습니다.
+								</p>
+								
+							</li>
+
+							<li>
+									<div class="quote-name">
+											<span>
+												정제된 데이터베이스
+											</span>
+										</div>
+								<p>
+									가장 경쟁력있는 제품을 만들어내기에 가장 중요한 것은 정제된 데이터를 추출하고, 데이터베이스를 구축하는 일이었습니다. 
+								</p>
+								
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div><!-- end QUOTES -->
+
+		</div>
+	</section><!-- end PORTFOLIO -->
+
+	
+
+	<!-- BLOG -->
+	
+	<!-- CONTACT -->
+	<section id="contact" class="cat-pages">
+		<div class="container-liquid">
+
+			<!-- TITLE -->
+			<div class="row">
+				<header class="col-lg-12 col-md-12 col-sm-12 col-xs-12 cat-pages-title">
+					<div class="title-seprator"></div>
+					<h2>
+						contact
+					</h2>
+				</header>
+			</div><!-- end TITLE -->
+
+			<!-- GOOGLE MAP -->
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="col-lg-9 col-md-10 col-sm-10 col-xs-11 mylocation">
+						<img src = "../images/location.jpg" id = "location">
+					</div>
+				</div>
+			</div><!-- end GOOGLE MAP -->
+
+			<!-- CONTACT INFO & FORM -->
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="col-lg-9 col-md-10 col-sm-10 col-xs-11 contact-section">
+
+						<!-- CONTACT INFO -->
+						<div class="col-lg-5 col-md-12 col-sm-5 col-xs-12 contact-info">
+							<ul>
+								<li>
+									<i class="fa fa-home"></i>
+									<p>경기도 용인시 기흥구 서천동로21번길24-45</p>
+								</li>
+								<li>
+									<i class="fa fa-phone"></i>
+									<p>010-2551-9601</p>
+								</li>
+								<li>
+									<i class="fa fa-instagram"></i>
+									<p>jiyeon4541</p>
+								</li>
+								<li>
+									<i class="fa fa-envelope"></i>
+									<p>wldus_96@naver.com</p>
+								</li>
+							</ul>
+						</div><!-- end CONTACT INFO -->
+
+
+						<div class="col-lg-7 col-md-12 col-sm-7 col-xs-12 contact-form">
+							<form method="post" id="contactform" name="contactform">
+								<input type="text" name="name" id="name" placeholder="name">
+								<input type="email" name="email" id="email" placeholder="email">
+								<input type="text" name="subject" id="subject" placeholder="subject">
+								<textarea name="message" id="message" placeholder="message"></textarea>
+								<input type="submit" name="submit" id="submit" value="submit">
+							</form>
+
+							<h4 id="cf-success">
+								<i class="fa fa-check"></i> Your message was sent succssfully!
+							</h4>
+
+							<h4 id="cf-error">
+								<i class="fa fa-times"></i> Something went wrong, try refreshing and submitting the form again.
+							</h4>
+						</div>
+
+					</div>
+				</div>
+			</div><!-- end CONTACT INFO & FORM -->
+
+		</div>
+	</section><!-- end CONTACT -->
+	
+
+
+	<!-- SCRIPTS --> 
+	<script src='https://d33wubrfki0l68.cloudfront.net/bundles/ef680e3c9bd782cc771140dab1f25dd88d687921.js'></script>
+	
+
+
+	<script>
+
+		// PRELOADER SCRIPT
+		$(window).load(function() {
+			var prld = $('#custom-preloader-content').addClass("animated fadeOut");
+			setTimeout(function () {
+			    prld.css("display", "none").css("z-index", "-9999");
+			    $('#custom-preloader').css({
+			    	"display": "none",
+			    	"z-index": "-9999"
+			    });
+			    $('#content-wrap').css("z-index", "4");
+			    $('.main-content').css("z-index", "4");
+			}, 500);
+			
+		})
+
+		
+		// BACKGROUND IMAGE/SLIDESHOW SCRIPT
+		$('#background').backstretch("../images/background5.jpg");
+
+	
+
+	</script>
+	<!-- end SCRIPTS -->
+
+
+
+</body>
+</html>
